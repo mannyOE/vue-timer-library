@@ -1,19 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <center>
+      <svt
+        :size="'sm'"
+        :borderColor="'#d50'"
+        :direction="'up'"
+        :color="'#fff'"
+        :bg="'#43a'"
+        :time="new Date('2020/05/17')"
+      />
+    </center>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import HelloWorld from './components/HelloWorld.vue'
+import TimerComponent from './TimerComponent'
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    HelloWorld
-  }
-};
+    HelloWorld,
+    TimerComponent,
+  },
+}
 </script>
 
 <style>
